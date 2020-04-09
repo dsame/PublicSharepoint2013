@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="10e35863-b209-4d99-93d3-9f534e820a2f" 
+        solutionId="10e35863-b209-4d99-93d3-9f534e820a2f" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="PublicSharepoint2013"
+        sharePointProductVersion="15.0">
+</package>
