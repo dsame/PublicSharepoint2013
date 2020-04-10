@@ -1,0 +1,23 @@
+name: PublicSharepoint2013
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: microsoft/setup-msbuild@v1
+    - uses: nuget/setup-nuget@v1
+    - name: restore
+      working-directory: PublicSharepoint2013
+      run: nuget restore
+    - name: build
+      working-directory: PublicSharepoint2013
+      run: msbuild
